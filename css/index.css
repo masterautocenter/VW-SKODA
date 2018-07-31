@@ -1,0 +1,251 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(35, 106, 221);
+}
+
+.brand {
+    text-align: center;
+}
+
+/*
+======================================================
+CSS CODE FOR STAR SCALE ANIMATION
+======================================================
+*/
+
+.long span { /*FLOAT RIGHT IS FOR MIRRORING THE STAR SCALE*/
+    float:right;
+    text-align: center;
+}
+
+.long input {
+    display: none !important;
+}
+
+.q1 span label {
+    color:#FFF;
+    opacity: 0.2;
+}
+
+.q1:hover ~ span label img,
+.q1:hover img,
+.q1 span.checked label,
+.q1 span.checked ~ span label {
+    color:#FFF;
+    opacity: 1;
+}
+
+.q2 span label {
+    color:#FFF;
+    opacity: 0.2;
+}
+
+.q2:hover ~ span label img,
+.q2:hover img,
+.q2 span.checked label,
+.q2 span.checked ~ span label {
+    color:#FFF;
+    opacity: 1;
+}
+
+.q3 span label {
+    color:#FFF;
+    opacity: 0.2;
+}
+
+.q3:hover ~ span label img,
+.q3:hover img,
+.q3 span.checked label,
+.q3 span.checked ~ span label {
+    color:#FFF;
+    opacity: 1;
+}
+
+/*
+======================================================
+END OF STAR SCALE ANIMATION
+======================================================
+*//*
+======================================================
+MEDIA QUERRIES
+======================================================
+*/
+
+
+
+
+/*
+======================================================
+END OF MEDIA QUERRIES
+======================================================
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.thank {
+    padding: 20px;
+}
+
+.left {
+    float: left;
+}
+
+.brand_radio{
+    display: none !important;
+}
+
+.brand_label {
+    opacity: 0.3;
+    display: inline;
+    width: 75px;
+    height: auto;
+    margin-right: 3%;
+}
+
+.brand_radio:checked + label {
+    opacity: 1;
+}
+
+.q_radio{
+    display: none !important;
+}
+
+.q_label {
+    opacity: 0.3;
+    text-align: justify;
+    width: 50px;
+}
+
+.q_radio:checked + label {
+opacity: 1;
+}
+
+.block {
+    display: block;
+}
+
+.logo {
+    display: block;
+    margin: auto;
+    height: 20vh;
+}
+
+.logoIndex {
+    display: block;
+    margin: auto;
+    margin-top: 10vh;
+    height: 20vh;
+}
+
+.center {
+    margin: auto;
+    background-color: whitesmoke;
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    padding-bottom: 2%;
+    padding-top: 2%;
+}
+
+.centerIndex {
+    margin: auto;
+    height: 35vh;
+    width: 45vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.centerIndex a{
+    margin: auto;
+    border-radius: 40px;
+}
+
+
+
+.language a {
+    text-decoration: none;
+    color: black;
+    padding: 25px;
+    padding-right: 40px;
+    padding-left: 40px;
+    border-style: outset;
+    border-color: gainsboro;
+    background-color: gainsboro;
+}
+
+.long {
+    width: 550px;
+    text-align: center;
+}
+
+
+
+.submit {
+    float: right;
+    margin-top: 20px;
+}
+
+.long div {
+    width: 23vw;
+}
+
+
+
+
+
+.feedback {
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+.q1 {
+    padding-left: 2.5vw;
+}
+
+.q2 {
+    padding-left: 2.5vw;
+}
+
+.q3 {
+    padding-left: 2.5vw;
+}
+
+.question {
+    margin-bottom: 20px;
+}
+
+.elements {
+    margin-bottom: 50px;
+}
+
+.center a {
+    margin: 10px;
+}
+
+
+
+
