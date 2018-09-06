@@ -1,21 +1,25 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
 var score = [true, true, true];
 
 function req(x) {
-    score[x]=true;
-    if (score[1] == true || score[2] == true || score[3] == true)
+    score[x] = true;
+    if (score[1] == true || score[2] == true || score[3] == true) {
         document.getElementById("feedback").required = true;
+    }
 }
 
 function unreq(x) {
-    score[x]=false;
-    if (score[1] == false && score[2] == false && score[3] == false)
+    score[x] = false;
+    if (score[1] == false && score[2] == false && score[3] == false) {
         document.getElementById("feedback").required = false;
+    }
 }
 
 function half() {
-    if (document.forms["enq"]["nummerplaat"].value.length > 0 && $('input[type=radio][name=raadgever]:checked').size() > 0 && $('input[type=radio][name=enquete]:checked').size() > 0 && $('input[type=radio][name=merk]:checked').size() > 0){
-       document.getElementById("firstHalf").style.display="none"
-    document.getElementById("secondHalf").style.display="inherit"}
+    if (document.forms["enq"]["nummerplaat"].value.length > 0 && $('input[type=radio][name=raadgever]:checked').size() > 0 && $('input[type=radio][name=enquete]:checked').size() > 0 && $('input[type=radio][name=merk]:checked').size() > 0) {
+        document.getElementById("firstHalf").style.display = "none";
+        document.getElementById("secondHalf").style.display = "inherit";
+    }
 }
 
 $(document).ready(function () {
@@ -45,6 +49,6 @@ $(document).ready(function () {
     });
 });
 
-$("form").submit(function() {
-   $(":submit", this).attr("disabled", "disabled");
+$("form").submit(function () {
+    $(":submit", this).attr("disabled", "disabled");
 });
