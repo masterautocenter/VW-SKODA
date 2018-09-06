@@ -15,7 +15,7 @@
             <div class="center">
                 <form id="enq" name="enq">
                     <input name="taal" type="hidden" value="NL">
-                    <div class="firstHalf">
+                    <div id="firstNl">
                     <div class="elements">
                         <label>Nummerplaat: </label>
                         <br>
@@ -57,7 +57,7 @@
                     <br>
                     <button class="submit" onclick="half()" type="button">Next</button>
                     </div>
-                    <div class="secondHalf">
+                    <div id="secondNl">
                     <div class="long img elements">
                         <label class="question">Wanneer u terugdenkt aan uw laatste werkplaatbezoek in het algemeen, hoe tevreden bent over de service van deze Service Partner?</label>
                         <br>
@@ -119,7 +119,13 @@
                     .then(response => window.location.href = 'endNl.html')  
                     .catch(error => console.error('Error!', error.message))
                       console.log("test");
-                  }) 
+                  })
+            function half() {
+                if (document.forms["enq"]["nummerplaat"].value.length > 0 && $('input[type=radio][name=raadgever]:checked').size() > 0 && $('input[type=radio][name=enquete]:checked').size() > 0 && $('input[type=radio][name=merk]:checked').size() > 0) {
+                    document.getElementById("firstNl").style.display = "none";
+                    document.getElementById("secondNl").style.display = "inherit";
+                }
+            }
         </script>
     </body>
 </html>

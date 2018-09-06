@@ -192,13 +192,31 @@ END OF SUBMIT BUTTON STYLING
 ======================================================
 */
 
-.firsthalf {
+#firstEn {
     padding: 0;
     margin: auto;
     width: 600px;
 }
 
-.secondHalf {
+#secondEn {
+    display: none;
+}
+#firstFr {
+    padding: 0;
+    margin: auto;
+    width: 600px;
+}
+
+#secondFr {
+    display: none;
+}
+#firstNl {
+    padding: 0;
+    margin: auto;
+    width: 600px;
+}
+
+#secondNl {
     display: none;
 }
 
