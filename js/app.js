@@ -43,3 +43,13 @@ function upperCaseF(a){
                             a.value = a.value.toUpperCase();
                         }, 1);
                     }
+
+function half(){
+   if (document.forms["enq"]["nummerplaat"].value.length > 0 && $('input[type=radio][name=raadgever]:checked').size() > 0 && $('input[type=radio][name=enquete]:checked').size() > 0 && $('input[type=radio][name=merk]:checked').size() > 0){
+       document.getElementById("firstHalf").style.display="none"
+    document.getElementById("secondHalf").style.display="inherit"}
+}
+
+$("form").submit(function() {
+   $(":submit", this).attr("disabled", "disabled");
+});
