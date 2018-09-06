@@ -62,11 +62,11 @@
                         <label class="question">Lorsque vous pensez à votre dernière visite chez ce Partenaire Service dans son ensemble, quel est votre degré de satisfaction quant à son service?</label>
                         <br>
                         <div class="q1">
-                            <span><input type="radio" name="algemeen" id="q15" value="5" required><label for="q15"><img src="img/star.png" class="star" alt="star image"></label></span>
-                            <span><input type="radio" name="algemeen" id="q14" value="4"><label for="q14"><img src="img/star.png" class="star" alt="star image"></label></span>
-                            <span><input type="radio" name="algemeen" id="q13" value="3"><label for="q13"><img src="img/star.png" class="star" alt="star image"></label></span>
-                            <span><input type="radio" name="algemeen" id="q12" value="2"><label for="q12"><img src="img/star.png" class="star" alt="star image"></label></span>
-                            <span><input type="radio" name="algemeen" id="q11" value="1"><label for="q11"><img src="img/star.png" class="star" alt="star image"></label></span>
+                            <span><input type="radio" name="algemeen" id="q15" value="5" required><label for="q15"><img src="img/star.png" class="star" alt="star image" onclick="unreq(1)"></label></span>
+                            <span><input type="radio" name="algemeen" id="q14" value="4"><label for="q14"><img src="img/star.png" class="star" alt="star image" onclick="unreq(1)"></label></span>
+                            <span><input type="radio" name="algemeen" id="q13" value="3"><label for="q13"><img src="img/star.png" class="star" alt="star image" onclick="req(1)"></label></span>
+                            <span><input type="radio" name="algemeen" id="q12" value="2"><label for="q12"><img src="img/star.png" class="star" alt="star image" onclick="req(1)"></label></span>
+                            <span><input type="radio" name="algemeen" id="q11" value="1"><label for="q11"><img src="img/star.png" class="star" alt="star image" onclick="req(1)"></label></span>
                         </div>
                     </div>
                     <br>
@@ -75,11 +75,11 @@
                         <label class="question">Quel est votre degré de satisfaction concernant le traitement personnalisé dont vous avez bénéficié?</label>
                         <br>
                         <div class="q2">
-                            <span><input type="radio" name="dienst" id="q25" value="5" required><label for="q25"><img src="img/star.png" class="star" alt="star image"></label></span>
-                            <span><input type="radio" name="dienst" id="q24" value="4"><label for="q24"><img src="img/star.png" class="star" alt="star image"></label></span>
-                            <span><input type="radio" name="dienst" id="q23" value="3"><label for="q23"><img src="img/star.png" class="star" alt="star image"></label></span>
-                            <span><input type="radio" name="dienst" id="q22" value="2"><label for="q22"><img src="img/star.png" class="star" alt="star image"></label></span>
-                            <span><input type="radio" name="dienst" id="q21" value="1"><label for="q21"><img src="img/star.png" class="star" alt="star image"></label></span>
+                            <span><input type="radio" name="dienst" id="q25" value="5" required><label for="q25"><img src="img/star.png" class="star" alt="star image" onclick="unreq(2)"></label></span>
+                            <span><input type="radio" name="dienst" id="q24" value="4"><label for="q24"><img src="img/star.png" class="star" alt="star image" onclick="unreq(2)"></label></span>
+                            <span><input type="radio" name="dienst" id="q23" value="3"><label for="q23"><img src="img/star.png" class="star" alt="star image" onclick="req(2)"></label></span>
+                            <span><input type="radio" name="dienst" id="q22" value="2"><label for="q22"><img src="img/star.png" class="star" alt="star image" onclick="req(2)"></label></span>
+                            <span><input type="radio" name="dienst" id="q21" value="1"><label for="q21"><img src="img/star.png" class="star" alt="star image" onclick="req(2)"></label></span>
                         </div>
                     </div>
                     <br class="hide">
@@ -89,11 +89,11 @@
                         <label class="question">Quel est votre degré de satisfaction concernant l'organisation chez ce Partenaire Service?</label>
                         <br>
                         <div class="q3">
-                            <span><input type="radio" name="organisatie" id="q35" value="5" required><label for="q35"><img src="img/star.png" class="star" alt="star image"></label></span>
-                            <span><input type="radio" name="organisatie" id="q34" value="4"><label for="q34"><img src="img/star.png" class="star" alt="star image"></label></span>
-                            <span><input type="radio" name="organisatie" id="q33" value="3"><label for="q33"><img src="img/star.png" class="star" alt="star image"></label></span>
-                            <span><input type="radio" name="organisatie" id="q32" value="2"><label for="q32"><img src="img/star.png" class="star" alt="star image"></label></span>
-                            <span><input type="radio" name="organisatie" id="q31" value="1"><label for="q31"><img src="img/star.png" class="star" alt="star image"></label></span>
+                            <span><input type="radio" name="organisatie" id="q35" value="5" required><label for="q35"><img src="img/star.png" class="star" alt="star image" onclick="unreq(3)"></label></span>
+                            <span><input type="radio" name="organisatie" id="q34" value="4"><label for="q34"><img src="img/star.png" class="star" alt="star image" onclick="unreq(3)"></label></span>
+                            <span><input type="radio" name="organisatie" id="q33" value="3"><label for="q33"><img src="img/star.png" class="star" alt="star image" onclick="req(3)"></label></span>
+                            <span><input type="radio" name="organisatie" id="q32" value="2"><label for="q32"><img src="img/star.png" class="star" alt="star image" onclick="req(3)"></label></span>
+                            <span><input type="radio" name="organisatie" id="q31" value="1"><label for="q31"><img src="img/star.png" class="star" alt="star image" onclick="req(3)"></label></span>
                         </div>
                     </div>
                     <br class="hide">
@@ -102,7 +102,7 @@
                     <div class="elements">
                         <label>Que pouvons nous améliorer d'après vous?</label>
                         <br>
-                        <input type="text" class="feedback" name="feedback">
+                        <input type="text" class="feedback" id="feedback" name="feedback">
                     </div>
                     <button type="submit" class="submit" onsubmit="this.reset();">Soumettre</button>
                     </div>
