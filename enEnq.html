@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" href="img/logo.png" />
         <link rel="stylesheet" href="css/index.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
 	</head>
     <body>
         <a href="index.html"><img class="logo" src="img/logo.png" alt="ACZ logo"></a>
@@ -19,7 +19,7 @@
                     <div class="elements">
                         <label>License Plate: </label>
                         <br>
-                        <input class="plate" name="nummerplaat" type="text" onkeydown="upperCaseF(this)" required> 
+                        <input class="plate" name="nummerplaat" type="text" required onkeyup="this.value = this.value.toUpperCase();"> 
                     </div>
                     <div class="elements names">
                         <label>Service Advisor:</label>

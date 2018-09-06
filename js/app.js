@@ -36,14 +36,6 @@ $(document).ready(function(){
         $(this).parent().addClass('checked');
     });
 });
-
-
-function upperCaseF(a){
-                        setTimeout(function(){
-                            a.value = a.value.toUpperCase();
-                        }, 1);
-                    }
-
 function half(){
    if (document.forms["enq"]["nummerplaat"].value.length > 0 && $('input[type=radio][name=raadgever]:checked').size() > 0 && $('input[type=radio][name=enquete]:checked').size() > 0 && $('input[type=radio][name=merk]:checked').size() > 0){
        document.getElementById("firstHalf").style.display="none"
