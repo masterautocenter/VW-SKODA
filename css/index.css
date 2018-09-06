@@ -192,13 +192,13 @@ END OF SUBMIT BUTTON STYLING
 ======================================================
 */
 
-#firsthalf {
+.firsthalf {
     padding: 0;
     margin: auto;
     width: 600px;
 }
 
-#secondHalf {
+.secondHalf {
     display: none;
 }
 
