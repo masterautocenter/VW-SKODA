@@ -14,15 +14,15 @@
         <div>
             <div class="center">
                 <form id="enq" name="enq">
-                    <input name="taal" type="hidden" value="EN">
+                    <input name="taal" type="hidden" value="NL">
                     <div id="firstHalf">
                     <div class="elements">
-                        <label>License Plate: </label>
+                        <label>Nummerplaat: </label>
                         <br>
                         <input class="plate" name="nummerplaat" type="text" required onkeyup="this.value = this.value.toUpperCase();"> 
                     </div>
                     <div class="elements names">
-                        <label>Service Advisor:</label>
+                        <label>Service Raadgever:</label>
                         <br>
                         <label class="block"><input name="raadgever" type="radio" value="MAJDA" required>Majda</label>
                         <label class="block"><input name="raadgever" type="radio" value="CARINE">Carine</label>
@@ -35,7 +35,7 @@
                     </div>
                     
                     <div class="elements names">
-                        <label>Surveyee:</label>
+                        <label>Enquêteur:</label>
                         <br>
                         <label class="block"><input name="enquete" type="radio" value="MAJDA" required>Majda</label>
                         <label class="block"><input name="enquete" type="radio" value="CARINE">Carine</label>
@@ -47,7 +47,7 @@
                         <label class="block"><input name="enquete" type="radio" value="CHRISTOPHE">Christophe</label>
                     </div>                    
                     <div class="brand elements">
-                        <label class="left">Brand: </label>
+                        <label class="left">Merk: </label>
                         <br>
                         <input class="brand_radio" id="radio1" name="merk" type="radio" value="VW" required>
                         <label class="brand_label" for="radio1"><img class="brand_img" src="img/vw.jpg" alt="vw logo"></label>
@@ -59,7 +59,7 @@
                     </div>
                     <div id="secondHalf">
                     <div class="long img elements">
-                        <label class="question">When you think about your last visit at this Service Partner in general, how satisfied are you with the provided service?</label>
+                        <label class="question">Wanneer u terugdenkt aan uw laatste werkplaatbezoek in het algemeen, hoe tevreden bent over de service van deze Service Partner?</label>
                         <br>
                         <div class="q1">
                             <span><input type="radio" name="algemeen" id="q15" value="5" required><label for="q15"><img src="img/star.png" class="star" alt="star image"></label></span>
@@ -72,7 +72,7 @@
                     <br>
                     <hr>
                     <div id="question2" class="long img elements">
-                        <label class="question">How satisfied are you with the personal service at this Service Partner?</label>
+                        <label class="question">Hoe tevreden bent u over de persoonlijke dienstverlening bij deze Service Partner?</label>
                         <br>
                         <div class="q2">
                             <span><input type="radio" name="dienst" id="q25" value="5" required><label for="q25"><img src="img/star.png" class="star" alt="star image"></label></span>
@@ -86,7 +86,7 @@
                     <hr class="hide">
                     <br class="hide">
                     <div class="long img elements">
-                        <label class="question">How satisfied are you with the organization at this Service Partner?</label>
+                        <label class="question">Hoe tevreden bent u over de organisatie bij deze Service Partner?</label>
                         <br>
                         <div class="q3">
                             <span><input type="radio" name="organisatie" id="q35" value="5" required><label for="q35"><img src="img/star.png" class="star" alt="star image"></label></span>
@@ -100,11 +100,11 @@
                     <hr class="hide">
                     <br class="hide">
                     <div class="elements">
-                        <label>What can we improve according to you?</label>
+                        <label>Wat kunnen wij verbeteren volgens U ?</label>
                         <br>
                         <input type="text" class="feedback" name="feedback">
                     </div>
-                    <button type="submit" class="submit" onsubmit="this.reset();">Submit</button>
+                    <button type="submit" class="submit" onsubmit="this.reset();">Sturen</button>
                     </div>
                  </form>
             </div>
@@ -116,7 +116,7 @@
                   form.addEventListener('submit', e => {  
                    e.preventDefault()  
                    fetch(scriptURL, { method: 'POST', body: new FormData(form)})  
-                    .then(response => window.location.href = 'endEn.html')  
+                    .then(response => window.location.href = 'endNl.html')  
                     .catch(error => console.error('Error!', error.message))
                       console.log("test");
                   }) 
