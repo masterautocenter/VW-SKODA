@@ -30,7 +30,7 @@
                         <label class="block"><input name="raadgever" type="radio" value="ANTHONY">Anthony</label>
                         <label class="block"><input name="raadgever" type="radio" value="CÉDRIC">Cédric</label>
                         <label class="block"><input name="raadgever" type="radio" value="BENJAMIN">Benjamin</label>
-                        <label class="block"><input name="raadgever" type="radio" value="AXEL">Axel</label>
+                        <label class="block"><input name="raadgever" type="radio" value="JEREMY">Jeremy</label>
                         <label class="block"><input name="raadgever" type="radio" value="CHRISTOPHE">Christophe</label>
                     </div>
                     
@@ -43,7 +43,7 @@
                         <label class="block"><input name="enquete" type="radio" value="ANTHONY">Anthony</label>
                         <label class="block"><input name="enquete" type="radio" value="CÉDRIC">Cédric</label>
                         <label class="block"><input name="enquete" type="radio" value="BENJAMIN">Benjamin</label>
-                        <label class="block"><input name="enquete" type="radio" value="AXEL">Axel</label>
+                        <label class="block"><input name="enquete" type="radio" value="JEREMY">Jeremy</label>
                         <label class="block"><input name="enquete" type="radio" value="CHRISTOPHE">Christophe</label>
                     </div>                    
                     <div class="brand elements">
@@ -111,8 +111,8 @@
         </div>
         <script src="js/app.js"></script>
         <script>
-            const scriptURL = 'https://script.google.com/macros/s/AKfycbzT6UG1sbkMMVo0MAn5WWYps_tnEI2JoRB_XjJIFmEB9KkmRWQz/exec'  
-                  const form = document.forms['enq']  
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbzT6UG1sbkMMVo0MAn5WWYps_tnEI2JoRB_XjJIFmEB9KkmRWQz/exec'
+            const form = document.forms['enq']  
                   form.addEventListener('submit', e => {  
                    e.preventDefault()  
                    fetch(scriptURL, { method: 'POST', body: new FormData(form)})  
