@@ -32,6 +32,7 @@
                         <label class="block"><input name="raadgever" type="radio" value="BENJAMIN">Benjamin</label>
                         <label class="block"><input name="raadgever" type="radio" value="JEREMY">Jeremy</label>
                         <label class="block"><input name="raadgever" type="radio" value="CHRISTOPHE">Christophe</label>
+                        <label class="block"><input name="raadgever" id="andere" type="radio" value="">Other: <input name="raadgever" type="text" id="andereInput" contextmenu="Andere" style="align-self:center;height: 40px;border:1px solid black;font-size: 1em; width: 60% !important;" onkeyup="this.value = this.value.toUpperCase();"></label>
                     </div>
                     
                     <div class="elements names">
@@ -45,6 +46,7 @@
                         <label class="block"><input name="enquete" type="radio" value="BENJAMIN">Benjamin</label>
                         <label class="block"><input name="enquete" type="radio" value="JEREMY">Jeremy</label>
                         <label class="block"><input name="enquete" type="radio" value="CHRISTOPHE">Christophe</label>
+                        <label class="block"><input name="enquete" id="enqueteAndere" type="radio" value="">Other: <input name="enquete" type="text" id="andereEnqueteInput" contextmenu="Andere" style="align-self:center;height: 40px;border:1px solid black;font-size: 1em; width: 60% !important;" onkeyup="this.value = this.value.toUpperCase();"></label>
                     </div>                    
                     <div class="brand elements">
                         <label class="left">Brand: </label>
@@ -124,6 +126,12 @@
                 if (document.forms["enq"]["nummerplaat"].value.length > 0 && $('input[type=radio][name=raadgever]:checked').size() > 0 && $('input[type=radio][name=enquete]:checked').size() > 0 && $('input[type=radio][name=merk]:checked').size() > 0) {
                     document.getElementById("firstEn").style.display = "none";
                     document.getElementById("secondEn").style.display = "inherit";
+                }
+                if (document.getElementById('andere').checked == true) {
+                    document.getElementById('andere').value = document.getElementById('andereInput').value;
+                }
+                if (document.getElementById('enqueteAndere').checked == true) {
+                    document.getElementById('enqueteAndere').value = document.getElementById('andereEnqueteInput').value;
                 }
             }
         </script>
