@@ -312,3 +312,16 @@ opacity: 1;
     width:30px !important;
     height:30px!important;
 }
+
+.footerholder {
+    margin-top: 20px;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+}
+
+.footer {
+    height: 100px;
+    margin: auto;
+    width: 400px;
+}
